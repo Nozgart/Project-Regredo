@@ -22,13 +22,13 @@ public:
 		void IntendMoveForward(float Throw);
 
 	UFUNCTION(BlueprintCallable, Category = "CustomMoving")
-		void IntendTurnRight(float Throw);
+		void IntendTurnRight(float Throw, float ThrowForward);
 
 	UFUNCTION(BlueprintCallable, Category = "Setup")
 		void Initialise(UTankTrack* LeftToSet, UTankTrack* RightToSet);
 
 private:
-
+	//Для передвижения ИИ (или нет)
 	virtual void RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed) override;
 
 	UTankTrack* LeftTrack = nullptr;
