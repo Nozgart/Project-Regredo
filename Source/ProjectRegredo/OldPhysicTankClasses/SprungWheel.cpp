@@ -62,7 +62,7 @@ void ASprungWheel::Tick(float DeltaTime)
 	{
 		TotalDrivingForcePerFrame = 0;
 	}
-	UE_LOG(LogTemp, Warning, TEXT("Tick on %f"), GetWorld()->GetTimeSeconds());
+	//UE_LOG(LogTemp, Warning, TEXT("Tick on %f"), GetWorld()->GetTimeSeconds());
 }
 
 void ASprungWheel::AddDrivingForce()
